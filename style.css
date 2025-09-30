@@ -1,0 +1,174 @@
+.noscroll .Body {
+        overflow-x: hidden;
+    }
+    .body {
+        background: linear-gradient(to bottom, #FFFFFF,#D3D3D3)
+    }
+    .container {
+        width:100%;
+        display:flex;
+        justify-content: center;
+        margin-bottom: 10vh;
+        
+    }
+    .imgcontainer {
+        display:flex;
+        justify-content: left;
+        border: 2px solid #0B0C48;
+    }
+    .profile {
+        margin-left: 5vw;
+        margin-top:2vh;
+        width: 200px; 
+        height: 33vh; 
+        background-color: blue; 
+        border-radius: 50%;
+        border: 2px solid #0B0C48;
+    }
+    .aboutmecontainer {
+        width: 50vw;
+        display: flex;  
+        flex-direction:column; 
+    }
+
+    #header1 {
+        display:flex;
+        justify-content: center;
+        font-family:Fredoka one;
+        font-size: 35pt;
+        color: #0B0C48
+    }
+    .aboutmetxt {
+        display:flex;
+        text-align: center;
+        padding-left: 5px;
+        font-family: Fredoka one;
+        font-size: 12pt;
+        color:#0B0C48
+    }
+    body{
+        margin: 0px;
+    
+    }
+    .landing{
+        height: 100vh;
+        width: 100vw;
+    background: linear-gradient(to bottom, #FFFFFF,#D3D3D3 )
+    }
+
+
+    .name {
+    text-align: center;
+    font-size: 300%;
+    font-family:'Fredoka One', sans-serif;
+    color:#0B0C48;
+    margin: 4.5vh;
+    }
+    .extra {
+
+    margin: 4.5vh;
+    }
+    .left{
+        display:flex;
+        justify-content: left;
+        width: 50vw;
+        position:relative;
+    
+        border-right: 5px solid #0B0C48;
+    }
+    .left::after {
+        content:"";
+        position:absolute;
+        bottom: 0;
+        right: 0;
+        width:72%;
+        border-bottom: 5px solid #0B0C48;
+    }
+    .right {
+        display:flex;
+        justify-content:right;
+        width:50vw;
+        position: relative;
+    
+    }
+    .right::after {
+        content: "";
+        position:absolute;
+        bottom:0;
+        left:0;
+        width: 73%;
+        border-bottom: 5px solid #0B0C48
+    }
+    .email {
+        text-align: right;
+        padding-right: 3vw;
+        font-family: 'Fredoka One', sans-serif;
+        color:#0B0C48;
+        font-size: 20px;
+    }
+    .pic{
+        float: left;
+        width:25vw;
+    
+    }
+    .title{
+    
+        text-align:center;
+        margin:0;
+        width:25vw;
+    }
+    .linkimg {
+        width:15vw;
+    }
+    .resumeimg {
+        width:15vw;
+    }
+    .GitHubimg {
+        width: 15vw;
+    }
+    .buttonlinks {
+        display:flex;
+        justify-content: center;
+        justify-content:space-evenly;
+        margin:30px;
+        
+    }
+    .Card-Container {
+        display:flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        margin-top: 5vh;
+    }
+    .stockcardimg {
+        width: 35vw;
+        background-color:#FFFFFF;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+        margin:20px;
+    }
+    
+    .text {
+        padding-left: 20px;
+        color:#FFFFFF;
+        font-size: 10pt;
+        font-family: 'Fredoka One', sans-serif;
+    }
+    .CopyCat {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        background:#0B0C48;
+        
+        width:100%;
+    }
+    .copycatimg {
+        padding-top: 30px;
+        padding-left: 25px;
+        width: 15vw;
+    }
+    .projectitle {
+        color:#0B0C48;
+        font-size: 30pt;
+        font-family: 'Fredoka One', sans-serif;
+    }
