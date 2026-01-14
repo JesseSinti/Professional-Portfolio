@@ -413,7 +413,7 @@ h3 {
     }
 
     .nav-links {
-        display: none;
+        font-size : .5rem;
     }
 
 }
