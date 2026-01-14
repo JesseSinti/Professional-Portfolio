@@ -15,6 +15,7 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth;
     background-image: radial-gradient(circle at 50% 0%, #1a0505 0%, #050505 100%);
+    overflow-x : hidden ;
 }
 
 * {
