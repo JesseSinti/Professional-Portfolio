@@ -7,6 +7,7 @@
     <title>Jesse Sintikakis | Full-Stack Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -69,7 +70,11 @@
     </div>
     <nav class="navbar">
         <div class="nav-container">
-            <span class="logo">JS</span>
+            <a href="#" class="logo-container">
+                <div class="logo-frame">
+                    <span class="logo-text" data-text="JS">JS</span>
+                </div>
+            </a>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
@@ -80,7 +85,7 @@
 
     <header class="hero">
         <div class="hero-content" data-aos="fade-up" >
-            <img class="profile-img" src="Images/ProfessionalPicture.jpg" alt="Jesse Sintikakis">
+            <img class="profile-img" src="Images/JesseSintikakis.jpeg" alt="Jesse Sintikakis">
             <h1 class="fade-in">Jesse Sintikakis</h1>
             <p class="subtitle">Full-Stack Software Developer</p>
             <p class="hero-tagline">Building robust, user-centric applications with Python, Django, and Java.</p>
@@ -93,26 +98,65 @@
     </header>
 
     <main class="container">
-        <section id="about" data-aos="fade-left" class="section">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>I am a full-stack developer based in Mississippi, currently honing my skills at <strong>Base Camp
-                            Coding Academy</strong>. I specialize in turning complex problems into simple, elegant
-                        software solutions.</p>
-                    <p>Outside of the editor, I'm passionate about fitness and meal-prepping. I believe that discipline and consistency are the keys to growth, whether in the gym or software development.</p>
+        <section id="about" data-aos="fade-up" class="section">
+            <div class="about-split-container">
+                <div class="split-col">
+                    <h2 class="section-title-small">About Me</h2>
+                    <p class="abouttxt">I am a full-stack developer based in Mississippi, currently honing my skills at <strong>Base Camp Coding
+                            Academy</strong>. I specialize in turning complex problems into simple, elegant software solutions.
+                    </p>
                 </div>
-                <div class="skills-box">
-                    <h3>Technical Stack</h3>
-                    <div class="skills-tags">
-                        <span class="techskill">Python</span> <span class="techskill">JavaScript</span> <span class="techskill">React</span> <span class="techskill">Git/Github</span>
-                        <span class="techskill">Django</span> <span class="techskill">Java</span> <span class="techskill">Spring</span> <span class="techskill">SQL</span>
+        
+                <div class="vertical-divider"></div>
+        
+                <div class="split-col">
+                    <h2 class="section-title-small">Hobbies</h2>
+                    <p class="abouttxt">Outside of the editor, I'm passionate about fitness and meal-prepping. I believe that discipline and
+                        consistency are the keys to growth, whether in the gym or software development.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="stack" data-aos="fade-up" class="section">
+            <h2 class="section-title">Technical Stack</h2>
+            <div class="skills-tags">
+                <span class="techskill"><i class="devicon-python-plain"></i> Python</span> <span class="techskill"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                <span class="techskill"><i class="devicon-react-original"></i> React</span> <span class="techskill"><i class="devicon-github-original"></i> Git/Github</span>
+                <span class="techskill"><i class="devicon-django-plain"></i> Django</span> <span class="techskill"><i class="devicon-java-plain"></i> Java</span>
+                <span class="techskill"><i class="devicon-spring-original"></i> Spring</span> <span class="techskill"><i class="devicon-azuresqldatabase-plain"></i> SQL</span>
+                <span class="techskill"><i class="devicon-typescript-plain"></i> Typescript</span>
+            </div>
+        </section>
+
+        <section id="certifications" data-aos="fade-up" class="section">
+            <h2 class="section-title">Degrees & Certifications</h2>
+            <div class="cert-grid">
+                <div class="project-card cert-card">
+                    <div class="cert-header">
+                        <i class="devicon-grad-cap statuspic">🎓</i> <span class="status-badge">In Progress</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>AAS in Computer Technology</h3>
+                        <p class="cert-org">Northwest Mississippi Community College</p>
+                        <span class="stack">Expected Summer 2026</span>
+                    </div>
+                </div>
+        
+                <div class="project-card cert-card">
+                    <div class="cert-header">
+                        <i class="devicon-amazonwebservices-plain-wordmark colored statuspic" style="font-size: 2rem;"></i>
+                        <span class="status-badge">In Progress</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>AWS Certified Developer Associate</h3>
+                        <p class="cert-org">Amazon Web Services</p>
+                        <span class="stack">Target: May 2026</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" data-aos="fade-right" class="section">
+        <section id="projects" data-aos="fade-up" class="section">
             <h2 class="section-title">Projects</h2>
             <div class="project-grid">
                 <div class="project-card">

@@ -63,10 +63,72 @@ h3 {
     align-items: center;
 }
 
-.logo {
-    font-weight: 700;
+
+.logo-container {
+    text-decoration: none;
+    display: inline-block;
+    perspective: 1000px;
+}
+
+.logo-frame {
+    position: relative;
+    padding: 5px 15px;
+    background: rgba(255, 22, 12, 0.05);
+    border: 2px solid var(--accent);
+    transform: skewX(-15deg);
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: -5px 0 0px rgba(255, 22, 12, 0.5);
+}
+
+.logo-text {
+    display: block;
+    font-weight: 900;
     font-size: 1.5rem;
-    color: var(--accent);
+    color: var(--text-main);
+    transform: skewX(15deg);
+    letter-spacing: 2px;
+    position: relative;
+}
+
+
+.logo-container:hover .logo-frame {
+    background: var(--accent);
+    transform: skewX(-15deg) scale(1.1);
+    box-shadow: 0 0 20px var(--accent-glow), 5px 0 0px #fff;
+}
+
+.logo-container:hover .logo-text {
+    color: #000;
+    text-shadow: none;
+}
+
+
+.logo-container:hover .logo-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.8;
+    color: #fff;
+    animation: flicker 0.3s infinite;
+}
+
+@keyframes flicker {
+    0% {
+        clip-path: inset(10% 0 15% 0);
+        transform: translate(-2px);
+    }
+
+    50% {
+        clip-path: inset(80% 0 5% 0);
+        transform: translate(2px);
+    }
+
+    100% {
+        clip-path: inset(10% 0 15% 0);
+        transform: translate(-2px);
+    }
 }
 
 .nav-links a {
@@ -94,12 +156,14 @@ h3 {
 }
 
 .profile-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 20%;
     margin-bottom: 1.5rem;
     border: 2px solid var(--accent);
     padding: 5px;
+    object-fit : cover;
+    object-position : center;
 }
 
 .hero h1 {
@@ -159,11 +223,38 @@ h3 {
 }
 
 
-.about-grid {
+.about-split-container {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
     gap: 4rem;
+    align-items: start;
+    margin-top: 2rem;
 }
+
+
+.split-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title-small {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+    border-left: 3px solid var(--accent);
+    padding-left: 15px;
+}
+
+.vertical-divider {
+    width: 1px;
+    background: var(--accent);
+    height: 100%;
+    min-height: 150px;
+    opacity: 0.4;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+
 
 .skills-tags {
     display: flex;
@@ -176,10 +267,62 @@ h3 {
     background: var(--card-bg);
     padding: 0.4rem 1rem;
     border-radius: 4px;
-    font-size: 0.85rem;
+    font-size: 1.25rem;
     border: 1px solid rgba(255, 22, 12, 0.2);
 }
 
+#stack .skills-tags {
+    justify-content: center;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+
+
+.cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.cert-card {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    
+}
+
+.statuspic {
+    font-size : 3rem;
+}
+
+
+.status-badge {
+    background: rgba(255, 22, 12, 0.1);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.cert-org {
+    color: var(--text-main) !important;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.cert-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 20px var(--accent-glow);
+}
 
 .project-grid {
     display: grid;
@@ -193,6 +336,7 @@ h3 {
     overflow: hidden;
     transition: var(--transition);
     border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom : 1.5rem;
 }
 
 .project-card:hover {
@@ -201,8 +345,10 @@ h3 {
 }
 
 .project-img-wrapper {
-    height: 200px;
+    height: 50%;
+    width : auto;
     background: #000;
+
 }
 
 .project-img-wrapper img {
@@ -415,6 +561,10 @@ h3 {
 
     .nav-links {
         font-size : .5rem;
+    }
+
+    .abouttxt {
+        font-size : .75rem;
     }
 
 }
