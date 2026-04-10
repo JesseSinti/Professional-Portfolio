@@ -292,7 +292,7 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-    
+
 }
 
 .statuspic {
@@ -324,11 +324,7 @@ h3 {
     box-shadow: 0 0 20px var(--accent-glow);
 }
 
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-}
+
 
 .project-card {
     background: var(--card-bg);
@@ -490,6 +486,92 @@ h3 {
     animation: blinkCursor 0.5s steps(2, start) infinite;
 }
 
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    justify-content: center;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-main);
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: inherit;
+    transition: var(--transition);
+}
+
+.filter-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.filter-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card.fade-out {
+    display: none;
+}
+
+.project-img-wrapper {
+    height: 160px;
+    width: 100%;
+    background: #000;
+}
+
+.project-info {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-info p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.stack {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
 
 
 @keyframes rotateCW {
@@ -541,7 +623,7 @@ h3 {
         stroke-dashoffset: -597;
     }
 
-    
+
 }
 
 @keyframes blinkCursor {

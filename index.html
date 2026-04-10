@@ -21,18 +21,18 @@
                         <stop offset="0%" stop-color="#FFFFFF" />
                         <stop offset="100%" stop-color="#FF0000" />
                     </linearGradient>
-                    
+
                     <linearGradient id="cyan-grad" x1="100%" y1="0%" x2="0%" y2="100%">
                         <stop offset="0%" stop-color="#FF0000" />
                         <stop offset="100%" stop-color="#000000" />
                     </linearGradient>
-                    
+
                     <radialGradient id="core-grad" cx="0.5" cy="0.5" r="0.5">
                         <stop offset="0%" stop-color="#FF0000" stop-opacity="0.8" />
                         <stop offset="100%" stop-color="#000000" stop-opacity="0" />
                     </radialGradient>
                 </defs>
-    
+
                 <g transform="translate(125, 125)">
                     <circle class="core-pulse" r="15" fill="url(#core-grad)" />
                     <circle class="core-solid" r="8" fill="#FF0000" />
@@ -40,30 +40,30 @@
                         <circle r="40" stroke="url(#cyan-grad)" stroke-width="2" stroke-dasharray="10 30" opacity="0.8" />
                         <circle r="35" stroke="#FF0000" stroke-width="1" stroke-dasharray="2 8" opacity="0.5" />
                     </g>
-                
+
                     <g class="ring-mid-gear">
                         <circle r="65" stroke="#1a1a1a" stroke-width="8" opacity="0.5" />
                         <circle r="65" stroke="#FF0000" stroke-width="8" stroke-dasharray="15 45" stroke-linecap="butt" />
                     </g>
-                
+
                     <circle class="main-progress" r="95" stroke="url(#indigo-grad)" stroke-width="6" stroke-linecap="round"
                         stroke-dasharray="597" stroke-dashoffset="597" transform="rotate(-90)" />
-                
+
                     <g class="ring-outer-slow">
                         <circle r="115" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="80 40" opacity="0.4" />
                         <circle r="120" stroke="#FF0000" stroke-width="3" stroke-dasharray="20 100" stroke-linecap="square"
                             opacity="0.6" />
                     </g>
-                
+
                     <g class="orbitals">
                         <circle r="3" fill="#FFFFFF" transform="translate(0, -115)" />
                         <circle r="3" fill="#FF0000" transform="translate(0, 65)" />
                     </g>
                 </g>
             </svg>
-    
+
             <div class="text-container">
-                
+
                 <p class="mech-text-sub">loading data streams... <span class="blink">_</span></p>
             </div>
         </div>
@@ -92,131 +92,109 @@
             <div class="social-row">
                 <a href="https://github.com/JesseSinti" target="_blank">GitHub</a>
                 <a  href="https://www.linkedin.com/in/jesse-sintikakis-1a46a1285/" target="_blank">LinkedIn</a>
-                <a href="https://www.canva.com/design/DAGxRwacm_g/KUVezXMEY5bXJM4As11pUA/edit?utm_content=DAGxRwacm_g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Resume</a>
+                <a href="https://docs.google.com/document/d/1Ux8ZMX6lT8cNrNA5KfgUw1LcFWyf7jKloOm_qHnnvxQ/edit?usp=sharing" target="_blank">Resume</a>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <section id="about" data-aos="fade-up" class="section">
-            <div class="about-split-container">
-                <div class="split-col">
-                    <h2 class="section-title-small">About Me</h2>
-                    <p class="abouttxt">I am a full-stack developer based in Mississippi, currently honing my skills at <strong>Base Camp Coding
-                            Academy</strong>. I specialize in turning complex problems into simple, elegant software solutions.
-                    </p>
-                </div>
-        
-                <div class="vertical-divider"></div>
-        
-                <div class="split-col">
-                    <h2 class="section-title-small">Hobbies</h2>
-                    <p class="abouttxt">Outside of the editor, I'm passionate about fitness and meal-prepping. I believe that discipline and
-                        consistency are the keys to growth, whether in the gym or software development.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="stack" data-aos="fade-up" class="section">
-            <h2 class="section-title">Technical Stack</h2>
-            <div class="skills-tags">
-                <span class="techskill"><i class="devicon-python-plain"></i> Python</span> <span class="techskill"><i class="devicon-javascript-plain"></i> JavaScript</span>
-                <span class="techskill"><i class="devicon-react-original"></i> React</span> <span class="techskill"><i class="devicon-github-original"></i> Git/Github</span>
-                <span class="techskill"><i class="devicon-django-plain"></i> Django</span> <span class="techskill"><i class="devicon-java-plain"></i> Java</span>
-                <span class="techskill"><i class="devicon-spring-original"></i> Spring</span> <span class="techskill"><i class="devicon-azuresqldatabase-plain"></i> SQL</span>
-                <span class="techskill"><i class="devicon-typescript-plain"></i> Typescript</span>
-            </div>
-        </section>
-
-        <section id="certifications" data-aos="fade-up" class="section">
-            <h2 class="section-title">Degrees & Certifications</h2>
-            <div class="cert-grid">
-                <div class="project-card cert-card">
-                    <div class="cert-header">
-                        <i class="devicon-grad-cap statuspic">🎓</i> <span class="status-badge">In Progress</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>AAS in Computer Technology</h3>
-                        <p class="cert-org">Northwest Mississippi Community College</p>
-                        <span class="stack">Expected Summer 2026</span>
-                    </div>
-                </div>
-        
-                <div class="project-card cert-card">
-                    <div class="cert-header">
-                        <i class="devicon-amazonwebservices-plain-wordmark colored statuspic" style="font-size: 2rem;"></i>
-                        <span class="status-badge">In Progress</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>AWS Certified Developer Associate</h3>
-                        <p class="cert-org">Amazon Web Services</p>
-                        <span class="stack">Target: May 2026</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section id="projects" data-aos="fade-up" class="section">
-            <h2 class="section-title">Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="Images/stockgatelogo.png" alt="StockGate">
-                    </div>
-                    <div class="project-info">
-                        <h3>StockGate</h3>
-                        <p>Inventory management system featuring Face-ID authentication for secure, passwordless access.
-                        </p>
-                        <span class="stack">Python • Tkinter • OpenCV</span>
-                        <a href="https://github.com/JesseSinti/StockGate.git" target="_blank" class="project-link">View Project &rarr;</a>
-                    </div>
-                </div>
+    <h2 class="section-title">Projects</h2>
 
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="Images/SilentWatch.png" alt="SilentWatch">
-                    </div>
-                    <div class="project-info">
-                        <h3>SilentWatch</h3>
-                        <p>Real-time missing persons tracker integrating the FBI database with a tip-submission portal.
-                        </p>
-                        <span class="stack">React • Node.js • API</span>
-                        <a href="https://github.com/BaseCampCoding/unit-4-react-unit-project-food-squad.git" target="_blank" class="project-link">View Project &rarr;</a>
-                    </div>
-                </div>
+    <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="rust">Rust</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="javascript">JS / React</button>
+    </div>
 
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="Images/rift.png" alt="The Rift">
-                    </div>
-                    <div class="project-info">
-                        <h3>The Rift</h3>
-                        <p> “The Rift” is a ticket app for events created by organizations. All users are able to purchase tickets for events and
-                        receive a QR code by email upon completion of their tickets. This code can be used for admission by a simple scan of the
-                        code. Transactions are made with STRIPE.
-                        </p>
-                        <span class="stack">Django • Rest Framework</span>
-                        <a href="https://github.com/JesseSinti/The-Rift.git" target="_blank" class="project-link">View Project &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="Images/truevalue.png" alt="The Rift">
-                    </div>
-                    <div class="project-info">
-                        <h3>TrueValue Market</h3>
-                        <p> TrueValue Market is an intuitive ‘customer first’ public marketplace. With it the user can upload ‘for sale’ items to
-                        the database, browse items uploaded by other users, create accounts to save user data, and navigate to a fully
-                        functional checkout screen that allows the user to purchase the items in their cart.
-                        </p>
-                        <span class="stack">Django </span>
-                        <a href="https://github.com/JesseSinti/DjangoUnit2Project.git" target="_blank" class="project-link">View Project
-                            &rarr;</a>
-                    </div>
-                </div>
+    <div class="project-grid">
+        <div class="project-card" data-tags="rust tauri svelte">
+            <div class="project-img-wrapper">
+                <img src="Images/LunvixExplorer.png" alt="Lunvix Explorer">
             </div>
-        </section>
+            <div class="project-info">
+                <h3>Lunvix Explorer (In Dev)</h3>
+                <p>A high-performance file explorer built with Tauri and Rust utilizing a multi-threaded crawler and a persistent redb database for near-instant indexing.</p>
+                <span class="stack">Rust • Tauri • Svelte</span>
+                <a href="https://github.com/JesseSinti/Lunvix-Explorer.git" target="_blank" class="project-link">View Project &rarr;</a>
+            </div>
+        </div>
+
+        <div class="project-card" data-tags="rust">
+            <div class="project-img-wrapper">
+                <img src="Images/FastSearchLogo.png" alt="Fast-Search">
+            </div>
+            <div class="project-info">
+                <h3>Fast-Search</h3>
+                <p>Uses memmap2 to map file contents directly into memory for content matching. Features asynchronous execution on separate threads.</p>
+                <span class="stack">Rust • Egui</span>
+                <a href="https://github.com/JesseSinti/Fast-Search-Rust.git" target="_blank" class="project-link">View Project &rarr;</a>
+            </div>
+        </div>
+
+        <div class="project-card" data-tags="java spring javascript">
+            <div class="project-img-wrapper">
+                <img src="Images/WorkTrackLogo.png" alt="WorkTrack">
+            </div>
+            <div class="project-info">
+                <h3>WorkTrack</h3>
+                <p>Task Tracking and Budget Monitoring featuring dynamic tracking of project budgets and visual progress indicators.</p>
+                <span class="stack">Java • SpringBoot • JS</span>
+                <a href="https://github.com/spadilla11/WorkTrackUnitProject.git" target="_blank" class="project-link">View Project &rarr;</a>
+            </div>
+        </div>
+
+        <div class="project-card" data-tags="python">
+            <div class="project-img-wrapper">
+                <img src="Images/stockgatelogo.png" alt="StockGate">
+            </div>
+            <div class="project-info">
+                <h3>StockGate</h3>
+                <p>Inventory management system featuring Face-ID authentication for secure, passwordless access.</p>
+                <span class="stack">Python • Tkinter • OpenCV</span>
+                <a href="https://github.com/JesseSinti/StockGate.git" target="_blank" class="project-link">View Project &rarr;</a>
+            </div>
+        </div>
+
+        <div class="project-card" data-tags="javascript react node">
+            <div class="project-img-wrapper">
+                <img src="Images/SilentWatch.png" alt="SilentWatch">
+            </div>
+            <div class="project-info">
+                <h3>SilentWatch</h3>
+                <p>Real-time missing persons tracker integrating the FBI database with a tip-submission portal.</p>
+                <span class="stack">React • Node.js • API</span>
+                <a href="https://github.com/BaseCampCoding/unit-4-react-unit-project-food-squad.git" target="_blank" class="project-link">View Project &rarr;</a>
+            </div>
+        </div>
+
+        <div class="project-card" data-tags="python django">
+            <div class="project-img-wrapper">
+                <img src="Images/rift.png" alt="The Rift">
+            </div>
+            <div class="project-info">
+                <h3>The Rift</h3>
+                <p>A ticket app for events. Users receive a QR code by email for admission. Transactions via STRIPE.</p>
+                <span class="stack">Django • Rest Framework</span>
+                <a href="https://github.com/JesseSinti/The-Rift.git" target="_blank" class="project-link">View Project &rarr;</a>
+            </div>
+        </div>
+
+        <div class="project-card" data-tags="python django">
+            <div class="project-img-wrapper">
+                <img src="Images/truevalue.png" alt="TrueValue Market">
+            </div>
+            <div class="project-info">
+                <h3>TrueValue Market</h3>
+                <p>An intuitive customer-first public marketplace for uploading, browsing, and purchasing items with a functional checkout.</p>
+                <span class="stack">Django</span>
+                <a href="https://github.com/JesseSinti/DjangoUnit2Project.git" target="_blank" class="project-link">View Project &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
@@ -228,6 +206,30 @@
         setTimeout(() => {
             loader.classList.add("loader-hidden");
         }, 1825);
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projects = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                projects.forEach(project => {
+                    const tags = project.getAttribute('data-tags');
+
+                    if (filterValue === 'all' || tags.includes(filterValue)) {
+                        project.style.display = 'flex';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            });
+        });
     });
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
